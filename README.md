@@ -54,7 +54,48 @@ strong : strong importance
 
 b : bold / i : italic / u : underline 
 
+### elemnts without any closing tags (void elemnts) 
+
+img : image, having attributs as src: source/location alt: text description width: width of image in pixels height: in pixels 
+
+### boolean attributes 
+
+< input type="text" disabled="disabled" />  form element that that cant make entries.
+
+### single or double quotes
+
+href='' and href="" both are acceptable
+
+### using quotes inside a quote
+
+title=" An &quote ; Interesting &quote ; Reference ". just type & and end with ; having quote written in between.
+
 ### hyperlinks
 
-a : basic link, should have href="link" attribute
+a : basic link, should have href="link" attribute.
+
+block level links can be created by wraping the content inside a an anchor element.
+title="" attribute adds title to your links (when you hover).
+
+**same directory link** have href as "contact.html" or "aboout.html"
+
+**moving into subdirectories** work having href as "projects/index.html"
+
+**moving up into parent directories** work having href as "../pdf/project/product.html".
+use .. to move up a directory.
+
+### Document fragments
+
+(referance to a part in the same page)
+you can move into the same document using links, just add the id="" to that heading and then link it using href. 
+
+### Absolute vs Relative URLs
+
+**absolute url**  points to a location defined by its absolute path. https: // www. example. com/ projects/ index. html
+
+**relative url** points to a location that is relative to that file you are currently in. href="product.pdf" if that index is in the same folder with the product.pdf 
+
+### Email links
+
+a with href="mainto:###", ###=email of the recipient. a new outgoing email window will be opened by the user's email client with ### as destination, if ### is not present then it will open without any destination address. **specifying details** (you can add other information like subject, cc and body too)
 
