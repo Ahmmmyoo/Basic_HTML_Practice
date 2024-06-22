@@ -184,3 +184,97 @@ tbody : wrap the main part of the table content that isn't the table header or f
 
 tfooter : wrap the part of the table that is the footer — this might be a final row with items in the previous rows summed...
 
+## 4. HTML form
+
+form : used to create an HTML form for user input
+
+input : most used element, can be displayed in several ways by using the type attribute
+
+type ="" : (the types are as follows)
+
+- text : single-line text input
+- radio : select one of many choices 
+- checkbox : select zero or more choices
+- submit : a submit button
+- button : clickable button
+
+label : defines a label for many form element. shoud have for ="" attribute that should be equal to the id attribute of that input in order to bind them together.
+
+name ="" : each input must have a name attribute to be submitted, else the value will not be sent at all.
+
+action ="" : action to be performed when the form is submitted. usually added in the form element.
+
+target ="" : specifies where to display the response after submitting the form.
+
+method ="" : specifies the HTTP method to be used. (post or get).
+
+autocomplete ="" : browser automatically completes value based on values that the user has entered before.
+
+novalidate ="" : user data should not be validated when submitted.
+
+select : drop down list.
+
+size ="" : specify the number of visible values.
+
+multiple (void attribute) : multiple values can be selected.
+
+option ="" : defines an option that can be selected.
+
+textarea : multi-line input field.
+
+rows ="" : visable number of lines in the text area
+
+cols ="" : visable width of a text area
+
+button : defines a clickable button. always specify the type attribute for it.
+
+onclick ="" : 
+
+fieldset : used to group related data in a form.
+
+legend : defines the caption for the fieldset.
+
+datalist : dropdown predefined options for an input.
+
+input types : /type value/ < input type ="" >
+
+- button
+- checkbox
+- color
+- date
+- datetime-local
+- email
+- file
+- hidden
+- image
+- month
+- number
+- password
+- radio
+- range
+- reset
+- search
+- submit
+- tel
+- text
+- time
+- url
+- week
+
+input restrictions : /attributes/ 
+
+- checked 
+- disabled
+- max
+- maxlength 
+- min
+- pattern
+- readonly
+- required
+- size
+- step
+- value
+- placeholder : specifies a short hint of expected input value.
+- autofocus : input field should automatically get focus when page loads.
+- height & width : specifes for an image.
+

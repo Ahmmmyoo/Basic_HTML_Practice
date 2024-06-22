@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Example</title>
+  </head>
+  <body>
+    <form
+      action="/submit"
+      method="post"
+      target="_blank"
+      autocomplete="on"
+      novalidate
+    >
+      <!-- Text input -->
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+        autofocus
+      /><br /><br />
+
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        maxlength="20"
+        required
+      /><br /><br />
+
+      <!-- Email input -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <!-- Radio buttons -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br />
+      </fieldset>
+      <br />
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>Interests:</legend>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label><br />
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label><br />
+        <input type="checkbox" id="reading" name="interests" value="reading" />
+        <label for="reading">Reading</label><br />
+      </fieldset>
+      <br />
+
+      <!-- Select dropdown -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option></select
+      ><br /><br />
+
+      <!-- Multiple select dropdown -->
+      <label for="skills">Skills:</label>
+      <select id="skills" name="skills" size="4" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="python">Python</option></select
+      ><br /><br />
+
+      <!-- Textarea -->
+      <label for="bio">Biography:</label>
+      <textarea
+        id="bio"
+        name="bio"
+        rows="4"
+        cols="50"
+        placeholder="Tell us about yourself..."
+      ></textarea
+      ><br /><br />
+
+      <!-- Date input -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- Range input -->
+      <label for="volume">Volume:</label>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="100"
+      /><br /><br />
+
+      <!-- Color input -->
+      <label for="favcolor">Favorite Color:</label>
+      <input
+        type="color"
+        id="favcolor"
+        name="favcolor"
+        value="#0000ff"
+      /><br /><br />
+
+      <!-- Datalist -->
+      <label for="browsers">Choose your browser:</label>
+      <input list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Safari"></option>
+        <option value="Edge"></option>
+        <option value="Opera"></option></datalist
+
+      ><br /><br />
+
+      <!-- File input -->
+      <label for="resume">Upload your resume:</label>
+      <input type="file" id="resume" name="resume" /><br /><br />
+
+      <!-- Submit and reset buttons -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" /><br /><br />
+
+      <!-- Custom button -->
+      <button type="button" onclick="alert('Button clicked!')">
+        Click Me!
+      </button>
+    </form>
+  </body>
+</html>
