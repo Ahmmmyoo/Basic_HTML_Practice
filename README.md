@@ -153,3 +153,34 @@ dl then inside is dt and followed by dd at same level
 dl | dt /dt | dd /dd | /dl
 
 can also have multiple descriptions for one term, just add another dd in the same level.
+
+## 3. HTML table
+
+< table > YOUR-DATA-HERE < / table >
+
+table : this element is used to create a table
+
+caption : used to provide a title or explanation for the data in an HTML table. (used to provide a title or explanation for the data in an HTML table)
+
+td : table data : smallest element insdie table, creates a cell. (All of the cells are stored in a table row unless specificly made more table rows) (automatically aligned with each other on the same row)
+
+tr : table row : used to make rows in a table. 
+
+th : table header : to be recognized as headers visually and semantically. same as td but makes it a header
+
+scope ="" : can be added to the th element to tell (screen readers) exactly what cell is it the header for.
+
+rowspan ="" : (attribute) allows a single cell to span the height of more than one row
+
+colspan ="" : (attribute) allows a single cell to span the width of more than one column
+
+col (void element) : specifying styling information for each column. (we can use a blank col element to skip to the next col in the table)
+
+colgroup : comes after opening table tag, contains all the col element.
+
+thead : wrap the part of the table that is the header — this is usually the first row containing the column headings.
+
+tbody : wrap the main part of the table content that isn't the table header or footer.
+
+tfooter : wrap the part of the table that is the footer — this might be a final row with items in the previous rows summed...
+
