@@ -6,81 +6,162 @@
     <title>HTML Table</title>
   </head>
   <body>
-    <table style="border: 1px solid black">
-      <caption>
-        School timetable
-      </caption>
-      <colgroup>
-        <col />
-        <col />
-        <col style="background-color: greenyellow" colspan="5" />
-        <col />
-        <col style="background-color: greenyellow" colspan="5" />
-        <col
-          style="
-            background-color: burlywood;
-            border-color: brown;
-            border-radius: 3px;
-          "
-          colspan="5"
-        />
-        <col />
-        <col />
-      </colgroup>
-      <thead>
+    <header>
+      <h1>Two Language Courses</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Time Table 1</h2>
+      <table style="border: 1px solid black">
+        <caption>
+          School timetable
+        </caption>
+        <colgroup>
+          <col />
+          <col />
+          <col style="background-color: greenyellow" colspan="5" />
+          <col />
+          <col style="background-color: greenyellow" colspan="5" />
+          <col
+            style="
+              background-color: burlywood;
+              border-color: brown;
+              border-radius: 3px;
+            "
+            colspan="5"
+          />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1<sup>th</sup> Period</th>
+            <td>English</td>
+            <td></td>
+            <td></td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>2<sup>nd</sup> Period</th>
+            <td>English</td>
+            <td>English</td>
+            <td></td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>3<sup>rd</sup> Period</th>
+            <td></td>
+            <td>German</td>
+            <td></td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>4<sup>th</sup> Period</th>
+            <td></td>
+            <td>English</td>
+            <td></td>
+            <td>English</td>
+            <td>Dutch</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Time Table 2</h2>
+      <table style="border: 1px solid black">
+        <caption>
+          University of Canada
+        </caption>
+        <colgroup>
+          <col />
+          <col />
+          <col style="background-color: aquamarine" />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col style="background-color: orange" />
+        </colgroup>
         <tr>
           <th></th>
-          <th>Mon</th>
-          <th>Tues</th>
-          <th>Wed</th>
-          <th>Thurs</th>
-          <th>Fri</th>
-          <th>Sat</th>
-          <th>Sun</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>1<sup>th</sup> Period</th>
-          <td>English</td>
-          <td></td>
-          <td></td>
-          <td>German</td>
-          <td>Dutch</td>
-          <td></td>
-          <td></td>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
         </tr>
         <tr>
-          <th>2<sup>nd</sup> Period</th>
+          <th>1st Period</th>
           <td>English</td>
-          <td>English</td>
-          <td></td>
-          <td>German</td>
-          <td>Dutch</td>
-          <td></td>
-          <td></td>
+          <td>Networks</td>
+          <td>Calculas</td>
+          <td>1</td>
+          <td>ICT Lab</td>
+          <td>Logic</td>
+          <td>Systems</td>
         </tr>
         <tr>
-          <th>3<sup>rd</sup> Period</th>
-          <td></td>
-          <td>German</td>
-          <td></td>
-          <td>German</td>
-          <td>Dutch</td>
-          <td></td>
-          <td></td>
+          <th>2st Period</th>
+          <td>1</td>
+          <td>Physics</td>
+          <td>Networks</td>
+          <td>1</td>
+          <td>1</td>
+          <td>Logic</td>
+          <td>ICT</td>
         </tr>
         <tr>
-          <th>4<sup>th</sup> Period</th>
-          <td></td>
+          <th>3st Period</th>
+          <td>1</td>
+          <td>1</td>
           <td>English</td>
-          <td></td>
-          <td>English</td>
-          <td>Dutch</td>
-          <td></td>
-          <td></td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>ICT</td>
         </tr>
-      </tbody>
-    </table>
+        <tr>
+          <th>4st Period</th>
+          <td>Physics</td>
+          <td>1</td>
+          <td>1</td>
+          <td>Calculas</td>
+          <td>1</td>
+          <td>ICT Lab</td>
+          <td>Systems</td>
+        </tr>
+      </table>
+    </section>
   </body>
 </html>
